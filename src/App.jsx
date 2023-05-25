@@ -13,9 +13,11 @@ const App = () => {
     info:"text-info",
 
   }
+  const user = false;
+  
 
   return (
-    <div>
+    <>
       <h1 className="text-center">
         Hola soy react {title.toLocaleUpperCase()}{" "}
       </h1>
@@ -32,7 +34,8 @@ const App = () => {
          *  si se utiliza solo una etiqueta de button, no se incluye más contenido dentro de la etiqueta, para eso tendría
          que utilizar la etiqueta de cierre de Button </Button>
          */}
-    </div>
+         {user ? "online":"offline"}
+    </>
   );
 };
 export default App;
