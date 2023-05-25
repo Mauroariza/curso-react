@@ -5,7 +5,27 @@ const Button = () => {
 };
 
 const Texto = ()=>{
-  return <h1> Sí existe un usuario</h1>
+  
+  const frutas = ["manzana","pera","piña","mango"];
+  
+  /**
+   * en react debemos utilizar el índice en map porque react necesita saber que elemento se está modificando
+   */
+
+  return(
+    <>
+    <h1> Sí existe un usuario</h1>
+    <ul>
+      {
+        frutas.map((fruta,index)=>(  
+          <li key={index}>{fruta}</li>
+        ))
+      }
+    </ul>
+    </>
+  ) 
+  
+
 }
 
 const App = () => {
