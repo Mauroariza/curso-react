@@ -1,3 +1,5 @@
+
+import hawai from "./assets/images/hawai.jpg";
 const Button = () => {
   return <button className="btn btn-primary">Click me</button>;
 };
@@ -9,7 +11,7 @@ const Texto = ()=>{
 const App = () => {
   const title = "Mi título es una constante";
   const img = {
-    link: "https://picsum.photos/id/237/200/300",
+    link: hawai,
     clase: "img-responsive",
   };
   const classColors = {
