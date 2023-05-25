@@ -2,6 +2,10 @@ const Button = () => {
   return <button className="btn btn-primary">Click me</button>;
 };
 
+const Texto = ()=>{
+  return <h1> Sí existe un usuario</h1>
+}
+
 const App = () => {
   const title = "Mi título es una constante";
   const img = {
@@ -34,8 +38,11 @@ const App = () => {
          *  si se utiliza solo una etiqueta de button, no se incluye más contenido dentro de la etiqueta, para eso tendría
          que utilizar la etiqueta de cierre de Button </Button>
          */}
-         {user ? "online":"offline"}
+         {user ? "online":<Texto/>}
+         
     </>
   );
 };
 export default App;
+
+
